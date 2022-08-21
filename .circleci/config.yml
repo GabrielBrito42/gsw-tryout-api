@@ -1,0 +1,27 @@
+version: 2
+
+jobs:
+  build:
+    working_directory: ~/nest
+    docker:
+      - image: cimg/node:16.15.0
+        auth:
+          username: gabriel42
+          password: 39316790Gg 
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: yarn install --frozen-lockfile
+      - run:
+          name: Build
+          command: yarn build
+      - run:
+          name: Test
+          command: yarn test
+          
+workflows:
+  version: 2
+  build-and-test:
+    jobs:
+      - build
