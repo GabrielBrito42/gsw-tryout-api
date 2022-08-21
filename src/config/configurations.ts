@@ -4,6 +4,11 @@ export default () => {
     mongodbUrl: process.env.MONGODB_URL,
   }
 
+  const ENV_VARS_PROD = {
+    port: parseInt(process.env.PORT, 10) || 8080,
+    mongodbUrl: process.env.MONGODB_URL_PROD,
+  }
+
   const TEST_ENV_VARS = {
     port: parseInt(process.env.PORT, 10) || 8080,
     mongodbUrl: 'mongodb://localhost:27017',

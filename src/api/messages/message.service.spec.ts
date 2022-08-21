@@ -81,6 +81,8 @@ describe('Message Service', () => {
     let repositoryGetMessagesStub: sinon.SinonStub;
 
     it('should return array of messages', async () => {
+      sinon.stub(Date.prototype, 'toLocaleString').returns('20/08/2022 11:30:51')
+
       repositoryGetMessagesStub = sandbox
         .stub(repository, 'getAllMessages')
         .resolves([
