@@ -6,8 +6,6 @@ import { MessageModule } from './api/messages/message.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
-import { dbEnvironments } from './config/connections';
-
 import configuration from './config/configurations';
 
 @Module({
