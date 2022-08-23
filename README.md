@@ -41,3 +41,4 @@ $ yarn test
 ```
 
 - Author - Gabriel Cardoso 
+- Heroku - [Heroku](https://gsw-tryout-api.herokuapp.com/api) : https://gsw-tryout-api.herokuapp.com
