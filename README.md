@@ -40,6 +40,4 @@ $ npm run test
 $ yarn test
 ```
 
-## Stay in touch
-
 - Author - Gabriel Cardoso 
